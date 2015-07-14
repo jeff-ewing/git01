@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html xml:lang="en-US" lang="en-US">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <link rel="schema.DC" href="http://purl.org/DC/elements/1.0/" />
+        <link rel="SHORTCUT ICON" href="http://www.ibm.com/favicon.ico" />
+        <title>Mobile Enterprise, IBM MobileFirst. Put your business in motion.</title>
+        <meta name="Description" content="Become a mobile enterprise with the IBM MobileFirst portfolio of offerings."/>
+        <meta name="Keywords" content="mobile enterprise mobilefirst"/>
+        <meta name="Robots" content="index,follow" />
+        <meta name="Owner" content="" />
+        <meta name="DC.Rights" content="&#169; Copyright IBM Corporation 2012"/>
+        <meta name="DC.Subject" content="SWB40" scheme="IBM_SubjectTaxonomy" />
+        <meta name="IBM.WTMCategory" content="USEN" scheme="IBM_WTMCategory" />
+        <meta name="DC.Type" content="" scheme="IBM_ContentClassTaxonomy" />
+        <meta name="DC.Language" scheme="rfc1766" content="en-US" />
+        <meta name="DC.Date" scheme="iso8601" content="2012-09-13" />
+        <meta name="IBM.Country" content="US" />
+        <meta name="Source" content="v17 Template Generator" />
+        <script type="text/javascript" src="/mobile-enterprise/us/en/bin/js/mobile-redir.js">
+            //
+        </script>
+        <link href="http://1.www.s81c.com/common/v17/css/www.css" rel="stylesheet" title="www" type="text/css" />
+        <link href="bin/css/styles.css" rel="stylesheet" title="www" type="text/css" />
+        <script type="text/javascript" src="http://1.www.s81c.com/common/js/dojo/www.js">
+            //
+        </script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js">
+            //
+        </script>
+        <!--<script type="text/javascript" src="/mobile-enterprise/us/en/bin/js/scripts.js">-->
+		<script type="text/javascript" src="bin/js/scripts.js">
+            //
+        </script>
+        <script type="text/javascript" src="bin/js/jquery.roundabout.min.js">
+            //
+        </script>
+        <script type="text/javascript" src="bin/js/jquery.roundabout-shapes.min.js">
+            //
+        </script>
+        <!--script type="text/javascript">var editskill = "websphere-english";</script-->
+        <script src="//www.ibm.com/software/common-content/ssi/lp/lpdyn-common.js" type="text/javascript">
+        </script>
+        <!--link href="http://fast.fonts.com/cssapi/9684f9e5-3dd5-467a-9325-2d7ac0de4b75.css" rel="stylesheet" type="text/css" /-->
+        <!--[if gte IE 9]><style type="text/css">.gradient{filter: none;}</style><![endif]-->
+		
+        
+        <script>
+            $(document).ready(function(){
+                $('#card-carousel').roundabout({
+                    shape: 'tearDrop',
+                    minOpacity: 1.0,
+                    btnNext: ".r-next",
+                    btnPrev: ".r-previous",
+                    enableDrag: "true",
+					dragFactor: "1",
+                    duration: "400"
+                });
+                
+                $('.holds-cards').hover(function(){
+                    $('.controls').fadeToggle();
+                });
+                //$("div.announce-off").mouseover(function(){
+                    //$(this).removeClass().addClass("announce-over");
+                //}).mouseout(function(){
+                    //$(this).removeClass().addClass("announce-off");
+                //});
+				$('.card_toggle').click(function(e){
+					$(this).parent().parent().toggleClass('flip');
+					//return false;
+					//$(this).parent().toggleClass('flip');
+					//},function(){
+					//$(this).parent(div).siblings().toggleClass('flip');
+					e.preventDefault();
+				});
+            });
+        </script>
+        <style>
+            
+			#dialog_lpinvite, #dialog_lpinvite_underlay {
+                display: none;
+            }
+			.ibm-generic-link {
+				display: none !important;
+			}
+			.front-secondary-list-copy {
+			padding-bottom: 20px !important;
+			}
+			
+			.card {
+			-webkit-perspective: 600px;
+			-moz-perspective: 600px;
+			}
+			
+			.card .card_front {
+			z-index: 900 !important;
+
+			-webkit-transform: rotateX(0deg) rotateY(0deg);
+			-webkit-transform-style: preserve-3d;
+			-webkit-backface-visibility: hidden;
+
+			-moz-transform: rotateX(0deg) rotateY(0deg);
+			-moz-transform-style: preserve-3d;
+			-moz-backface-visibility: hidden;
+			
+			-o-transition: all .4s ease-in-out;
+			-ms-transition: all .4s ease-in-out;
+			-moz-transition: all .4s ease-in-out;
+			-webkit-transition: all .4s ease-in-out;
+			transition: all .4s ease-in-out;
+			}
+			/*.card_front .card_toggle {
+				z-index: 901 !important;
+				display: block !important;
+			}*/
+			.card.flip .card_front {
+			z-index: 900 !important;
+			-webkit-transform: rotateY(180deg);
+			-moz-transform: rotateY(180deg);
+			}
+			
+			.card.flip .card_back {
+				z-index: 1000 !important;
+				-webkit-transform: rotateX(0deg) rotateY(0deg);
+				-moz-transform: rotateX(0deg) rotateY(0deg);
+			}
+			.card .card_back {
+				z-index: 800 !important;
+			
+			-webkit-transform: rotateY(-180deg);
+			-webkit-transform-style: preserve-3d;
+			-webkit-backface-visibility: hidden;
+
+			-moz-transform: rotateY(-180deg);
+			-moz-transform-style: preserve-3d;
+			-moz-backface-visibility: hidden;
+			
+			-o-transition: all .4s ease-in-out;
+			-ms-transition: all .4s ease-in-out;
+			-moz-transition: all .4s ease-in-out;
+			-webkit-transition: all .4s ease-in-out;
+			transition: all .4s ease-in-out;
+			}
+			
+			.card_toggle.back-button {display: block;}
+			
+            
+        </style>
+        
+    </head>
+    <body aria-busy="false" id="ibm-com" class="nojs">
+        <div id="ibm-top" class="ibm-landing-page front">
+            <!-- MASTHEAD_BEGIN -->
+            <div id="ibm-masthead">
+                <div id="ibm-mast-options">
+                    <ul>
+                        <li id="ibm-geo">
+                            <a href="http://www.ibm.com/planetwide/select/selector.html"><span class="ibm-access">Select a country/region: </span>United States</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="ibm-universal-nav">
+                    <ul id="ibm-unav-links">
+                        <li id="ibm-home">
+                            <a href="http://www.ibm.com/us/en/">IBMÂ®</a>
+                        </li>
+                    </ul>
+                    <ul id="ibm-menu-links">
+                        <li>
+                            <a href="http://www.ibm.com/sitemap/us/en/">Site map</a>
+                        </li>
+                    </ul>
+                    <div id="ibm-search-module">
+                        <form id="ibm-search-form" action="http://www.ibm.com/Search/" method="get">
+                            <p>
+                                <label for="q">
+                                    <span class="ibm-access">Search</span>
+                                </label>
+                                <input type="text" maxlength="100" value="" name="q" id="q"/><input type="hidden" value="17" name="v"/><input type="hidden" value="utf" name="en"/><input type="hidden" value="en" name="lang"/><input type="hidden" value="us" name="cc"/><input type="submit" id="ibm-search" class="ibm-btn-search" value="Submit"/>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div><!-- MASTHEAD_END -->
+            <div role="main" id="ibm-access-cntr">
+                <!-- LEADSPACE_BEGIN -->
+                <div id="ibm-leadspace-head" class="ibm-alternate">
+                    <div id="ibm-leadspace-body">
+                        <ul id="ibm-navigation-trail">
+                            <li>
+                                <a target="_blank" href="http://www.ibm.com/smarterplanet/us/en/index.html">A Smarter Planet</a>
+                            </li>
+                        </ul>
+                        <h1>IBM Mobile Enterprise</h1>
+                        <!--<p class="ibm-no-mobile"><em>Transactions begin at the moment of awareness</em></p>-->
+                        <ul id="ibm-contact-list" class="ibm-live-assistance-list">
+                            <li>
+                                <div id="ibm-contact-phone">
+                                    <a target="_blank" href="http://www.ibm.com/services/forms/signup.do?source=raq&amp;S_TACT=109HE02W&amp;lang=en_us" class="ibm-requestquote-link">Request a quote</a>
+                                    <br>
+                                    <a target="_blank" href="http://www.ibm.com/services/forms/signup.do?source=swgmail&amp;S_TACT=109HE02W&amp;lang=en_us" class="ibm-email-link">Email IBM</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- LEADSPACE_END --><!-- TABS_BEGIN -->
+                <div id="ibm-content-nav">
+                    <div id="ibm-primary-tabs">
+                        <h2 class="ibm-access">Primary tab navigation</h2>
+                        <ul class="ibm-tabs">
+                            <li class="ibm-active">
+                                <a href="/mobile-enterprise/us/en/" aria-selected="true" role="tab" aria-label="Why mobile enterprise">Mobile enterprise <span class="ibm-access">- selected tab, </span></a>
+                            </li>
+                            <li>
+                                <a href="why-ibm-for-mobile/index.html" aria-selected="false" role="tab" aria-label="Why IBM">Why IBM</a>
+                            </li>
+                            <li>
+                                <a href="see-it-in-action/index.html" aria-selected="false" role="tab" aria-label="See it in action">See it in action</a>
+                            </li>
+                            <li>
+                                <a href="offerings/index.html" aria-selected="false" role="tab" aria-label="Offerings">Offerings</a>
+                            </li>
+                            <li>
+                                <a href="developers/index.html" aria-selected="false" role="tab" aria-label="Developer resources">Developer resources</a>
+                            </li>
+                            <li>
+                                <a href="conversations/index.html" aria-selected="false" role="tab" aria-label="Conversations">Conversations</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- TABS_END -->
+                <div id="ibm-pcon">
+                    <!-- CONTENT_BEGIN -->
+                    <div id="ibm-content">
+                        <!-- CONTENT_BODY -->
+                        <div id="ibm-content-body">
+                            <div id="ibm-content-main">
+                                <div class="ibm-columns">
+                                    <div class="ibm-col-1-1" style="text-align: center;">
+                                        <h2>Put your business in motion. Become a mobile enterprise.</h2>
+                                    </div>
+									
+                                    <div class="ibm-col-1-1 holds-cards" style="margin-bottom: 375px;position: relative;">
+									
+                                        <a href="#" onclick="ibmStats.event({'ibmEV' : 'internal event', 'ibmEvAction' : this.href, 'ibmEvLinkTitle' : 'card_carousel', 'ibmEvTarget' : 'previous_card'}); return true;" class="r-previous controls" style="display: none;">Previous</a>
+										
+                                        <a href="#" onclick="ibmStats.event({'ibmEV' : 'internal event', 'ibmEvAction' : this.href, 'ibmEvLinkTitle' : 'card_carousel', 'ibmEvTarget' : 'next_card'}); return true;" class="r-next controls" style="display: none;">Next</a>
+										
+                                        <ul id="card-carousel" style="" ontouchstart="touchStart(event,'card-carousel');" ontouchend="touchEnd(event);" ontouchmove="touchMove(event);" ontouchcancel="touchCancel(event);">
+                                            <li>
+                                                <div id="card_3" class="card_container">
+                                                    <div class="card">
+                                                        <div class="card_front">
+                                                            <h4>Faster to market</h4>
+                                                            <hr/>
+                                                            <p>
+                                                                How can I <b>speed development</b> and get to market sooner?
+                                                            </p>
+                                                            <a href="#" rel="card_3" class="card_toggle card-is-green">Learn more 
+                                                                
+                                                            </a>
+                                                        </div>
+                                                        <div class="card_back">
+                                                            <a href="#" rel="card_3" class="card_toggle back-button">&lt;</a>
+															
+                                                            <a href="http://twitter.com/intent/tweet?text=Why%20mobile%3F%20Deliver%20a%20superior%20customer%20experience%20and%20still%20control%20ROI+%23ibmmobilefirst%20http%3A%2F%2Fibm.com%2FXCC0QO%20via%20%40ibmmobile" title="Twitter" target="_blank" onclick="ibmStats.event({'ibmEV' : 'external link', 'ibmEvAction' : this.href, 'ibmEvLinkTitle' : 'Card 3', 'ibmEvTarget' : 'Twitter'}); return true;" class="twitter-link"></a>
+                                                            <a href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fwww.ibm.com%2Fmobile-enterprise%2Fus%2Fen%2Findex.html&t=Mobile-enterprise" title="Facebook" target="_blank" rel="facebook" onclick="ibmStats.event({'ibmEV' : 'external link', 'ibmEvAction' : this.href, 'ibmEvLinkTitle' : 'Card 3', 'ibmEvTarget' : 'Facebook'}); return true;" class="fb-link"></a>
+                                                            <p>
+                                                                Lotte Credit Card's <b>solution shares code across environments and integrates native functionality</b> so developers can work concurrently on hundreds of app pages.
+                                                            </p>
+                                                            <a href="http://public.dhe.ibm.com/common/ssi/ecm/en/wsc14400usen/WSC14400USEN.PDF" target="_blank" class="back-learn-more">Read case study</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div id="card_2" class="card_container">
+                                                    <div class="card">
+                                                        <div class="card_front" onclick="ibmStats.event({'ibmEV' : 'internal event', 'ibmEvAction' : this.href, 'ibmEvLinkTitle' : 'card_2', 'ibmEvTarget' : 'card_click_front'}); return true;">
+                                                            <h4>Delighting my customer</h4>
+                                                            <hr/>
+                                                            <p>
+                                                                I want mobile connections that <b>save time for my customer and my enterprise</b>
+                                                            </p>
+                                                            <a href="#" rel="card_2" onclick="ibmStats.event({'ibmEV' : 'internal event', 'ibmEvAction' : this.href, 'ibmEvLinkTitle' : 'card_2', 'ibmEvTarget' : 'flip_card_ftb'}); return true;" class="card_toggle card-is-blue">Learn more 
+                                                                
+                                                            </a>
+                                                        </div>
+                                                        <div class="card_back" onclick="ibmStats.event({'ibmEV' : 'internal event', 'ibmEvAction' : this.href, 'ibmEvLinkTitle' : 'card_2', 'ibmEvTarget' : 'card_click_back'}); return true;">
+                                                            <a href="#" rel="card_2" onclick="ibmStats.event({'ibmEV' : 'internal event', 'ibmEvAction' : this.href, 'ibmEvLinkTitle' : 'card_2', 'ibmEvTarget' : 'flip_card_btf'}); return true;" class="card_toggle back-button">&lt;</a>
+															
+                                                            <a href="http://twitter.com/intent/tweet?text=Why%20mobile%3F%20Save%20time%20for%20your%20customer%20and%20your%20enterprise.+%23ibmmobilefirst%20http%3A%2F%2Fibm.com%2F156EwnB%20via%20%40ibmmobile" title="Twitter" target="_blank" onclick="ibmStats.event({'ibmEV' : 'external link', 'ibmEvAction' : this.href, 'ibmEvLinkTitle' : 'Card 2', 'ibmEvTarget' : 'Twitter'}); return true;" class="twitter-link"></a>
+															
+                                                            <a href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fwww.ibm.com%2Fmobile-enterprise%2Fus%2Fen%2Findex.html&t=Mobile-enterprise" title="Facebook" target="_blank" rel="facebook" onclick="ibmStats.event({'ibmEV' : 'external link', 'ibmEvAction' : this.href, 'ibmEvLinkTitle' : 'Card 2', 'ibmEvTarget' : 'Facebook'}); return true;" class="fb-link"></a>
+															
+                                                            <p>
+                                                                To deliver a time-saving interface, Air Canada now <b>consolidates all self-service channels</b>, including mobile, using rules-based intelligence. The result: 60-second check-ins.
+                                                            </p>
+                                                            <a href="http://www.youtube.com/watch?v=dyXuheNcJDs" target="_blank" class="back-learn-more ibm-media">Watch video</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div id="card_7" class="card_container">
+                                                    <div class="card">
+                                                        <div class="card_front" onclick="ibmStats.event({'ibmEV' : 'internal event', 'ibmEvAction' : this.href, 'ibmEvLinkTitle' : 'card_7', 'ibmEvTarget' : 'card_click_front'}); return true;">
+                                                            <h4>Understanding my customer</h4>
+                                                            <hr/>
+                                                            <p>
+                                                                To improve customer engagement, I want <b>actionable insights from my big data</b>
+                                                            </p>
+                                                            <a href="#" rel="card_7" onclick="ibmStats.event({'ibmEV' : 'internal event', 'ibmEvAction' : this.href, 'ibmEvLinkTitle' : 'card_7', 'ibmEvTarget' : 'flip_card_ftb'}); return true;" class="card_toggle card-is-orange">Learn more 
+                                                                
+                                                            </a>
+                                                        </div>
+                                                        <div class="card_back" onclick="ibmStats.event({'ibmEV' : 'internal event', 'ibmEvAction' : this.href, 'ibmEvLinkTitle' : 'card_7', 'ibmEvTarget' : 'card_click_back'}); return true;">
+                                                            <a href="#" rel="card_7" onclick="ibmStats.event({'ibmEV' : 'internal event', 'ibmEvAction' : this.href, 'ibmEvLinkTitle' : 'card_7', 'ibmEvTarget' : 'flip_card_btf'}); return true;" class="card_toggle back-button">&lt;</a>
+															
+                                                            <a href="http://twitter.com/intent/tweet?text=Why%20mobile%3F%20Improve%20customer%20engagement%20with%20actionable%20insights%20from%20big%20data+%23ibmmobilefirst%20http%3A%2F%2Fibm.com%2F156H2tY%20via%20%40ibmmobile" title="Twitter" target="_blank" onclick="ibmStats.event({'ibmEV' : 'external link', 'ibmEvAction' : this.href, 'ibmEvLinkTitle' : 'Card 7', 'ibmEvTarget' : 'Twitter'}); return true;" class="twitter-link"></a>
+															
+                                                            <a href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fwww.ibm.com%2Fmobile-enterprise%2Fus%2Fen%2Findex.html&t=Mobile-enterprise" title="Facebook" target="_blank" rel="facebook" onclick="ibmStats.event({'ibmEV' : 'external link', 'ibmEvAction' : this.href, 'ibmEvLinkTitle' : 'Card 7', 'ibmEvTarget' : 'Facebook'}); return true;" class="fb-link"></a>
+															
+                                                            <p>
+                                                                Visa uses a <b>realtime analytics engine to provide personalized offers instantly</b> after a customer's card swipe. These more-targeted offers delivered a 109% sales boost for Gap Mobile4U.
+                                                            </p>
+                                                            <a href="http://www.youtube.com/watch?v=8M8RoxBvkSY" target="_blank" class="back-learn-more ibm-media">Watch video</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div id="card_8" class="card_container">
+                                                    <div class="card">
+                                                        <div class="card_front" onclick="ibmStats.event({'ibmEV' : 'internal event', 'ibmEvAction' : this.href, 'ibmEvLinkTitle' : 'card_8', 'ibmEvTarget' : 'card_click_front'}); return true;">
+                                                            <h4>Increase collaboration </h4>
+                                                            <hr/>
+                                                            <p>
+                                                                How can I improve service levels to <b>boost customer satisfaction</b>?
+                                                            </p>
+                                                            <a href="#" rel="card_8" onclick="ibmStats.event({'ibmEV' : 'internal event', 'ibmEvAction' : this.href, 'ibmEvLinkTitle' : 'card_8', 'ibmEvTarget' : 'flip_card_ftb'}); return true;" class="card_toggle card-is-green">Learn more 
+                                                                
+                                                            </a>
+                                                        </div>
+                                                        <div class="card_back" onclick="ibmStats.event({'ibmEV' : 'internal event', 'ibmEvAction' : this.href, 'ibmEvLinkTitle' : 'card_8', 'ibmEvTarget' : 'card_click_back'}); return true;">
+                                                            <a href="#" rel="card_8" onclick="ibmStats.event({'ibmEV' : 'internal event', 'ibmEvAction' : this.href, 'ibmEvLinkTitle' : 'card_8', 'ibmEvTarget' : 'flip_card_btf'}); return true;" class="card_toggle back-button">&lt;</a>
+															
+                                                            <a href="http://twitter.com/intent/tweet?text=Why%20mobile%3F%20Bring%20your%20people%20and%20customers%20together%20seamlessly+%23ibmmobilefirst%20http%3A%2F%2Fibm.com%2FXD1qha%20via%20%40ibmmobile" title="Twitter" target="_blank" onclick="ibmStats.event({'ibmEV' : 'external link', 'ibmEvAction' : this.href, 'ibmEvLinkTitle' : 'Card 8', 'ibmEvTarget' : 'Twitter'}); return true;" class="twitter-link"></a>
+															
+                                                            <a href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fwww.ibm.com%2Fmobile-enterprise%2Fus%2Fen%2Findex.html&t=Mobile-enterprise" title="Facebook" target="_blank" rel="facebook" onclick="ibmStats.event({'ibmEV' : 'external link', 'ibmEvAction' : this.href, 'ibmEvLinkTitle' : 'Card 8', 'ibmEvTarget' : 'Facebook'}); return true;" class="fb-link"></a>
+															
+                                                            <p>
+                                                                <b>Improve information access and collaboration with mobile Web connections</b> instead of email. ROBINSON Club now has 5X more employees using enterprise data.
+                                                            </p>
+                                                            <a href="http://public.dhe.ibm.com/common/ssi/ecm/en/epc12357deen/EPC12357DEEN.PDF" target="_blank" class="back-learn-more">Read case study</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <!--<li>
+                                                <div id="card_4" class="card_container">
+                                                    <div class="card">
+                                                        <div class="card_front">
+                                                            <h4>Guarding my system</h4>
+                                                            <hr/>
+                                                            <p>
+                                                                My priority is a <b>secure mobile enterprise</b>
+                                                                at the application, device, and network layer
+                                                            </p>
+                                                            <a href="#" rel="card_4" onclick="ibmStats.event({'ibmEV' : 'internal event', 'ibmEvAction' : this.href, 'ibmEvLinkTitle' : 'card_4', 'ibmEvTarget' : 'flip_card_ftb'}); return true;" class="card_toggle card-is-orange">Learn more 
+                                                                
+                                                            </a>
+                                                        </div>
+                                                        <div class="card_back">
+                                                            <a href="#" rel="card_4" onclick="ibmStats.event({'ibmEV' : 'internal event', 'ibmEvAction' : this.href, 'ibmEvLinkTitle' : 'card_4', 'ibmEvTarget' : 'flip_card_btf'}); return true;" class="card_toggle back-button">&lt;</a>
+															
+                                                            <a href="http://twitter.com/intent/tweet?text=[]%20http%3A%2F%2Fwww.ibm.com%2Fmobile-enterprise%2Fus%2Fen%2Findex.html" title="Twitter" target="_blank" onclick="ibmStats.event({'ibmEV' : 'external link', 'ibmEvAction' : this.href, 'ibmEvLinkTitle' : 'Card 4', 'ibmEvTarget' : 'Twitter'}); return true;" class="twitter-link"></a>
+															
+                                                            <a href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fwww.ibm.com%2Fmobile-enterprise%2Fus%2Fen%2Findex.html&t=Mobile-enterprise" title="Facebook" target="_blank" rel="facebook" onclick="ibmStats.event({'ibmEV' : 'external link', 'ibmEvAction' : this.href, 'ibmEvLinkTitle' : 'Card 4', 'ibmEvTarget' : 'Facebook'}); return true;" class="fb-link"></a>
+															
+                                                            <p>
+                                                                <b>Extend user access protection to mobile and cloud environments</b>
+                                                                using federated Single Sign-On (SSO), user authentication, risk scoring, and context-based access management.
+                                                            </p>
+                                                            <a href="http://www-01.ibm.com/software/success/cssdb.nsf/cs/LWIS-8USMVZ?OpenDocument&Site=corp&ref=crdb" target="_blank" class="back-learn-more">Learn how <b>IBM MobileFirst</b> can help you</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>-->
+                                            <li>
+                                                <div id="card_5" class="card_container">
+                                                    <div class="card">
+                                                        <div class="card_front" onclick="ibmStats.event({'ibmEV' : 'internal event', 'ibmEvAction' : this.href, 'ibmEvLinkTitle' : 'card_5', 'ibmEvTarget' : 'card_click_front'}); return true;">
+                                                            <h4>Optimize for multiple devices</h4>
+                                                            <hr/>
+                                                            <p>
+                                                                I want to reach new consumers
+																<b>across multiple channels and devices</b>
+                                                            </p>
+                                                            <a href="#" rel="card_5" onclick="ibmStats.event({'ibmEV' : 'internal event', 'ibmEvAction' : this.href, 'ibmEvLinkTitle' : 'card_5', 'ibmEvTarget' : 'flip_card_ftb'}); return true;" class="card_toggle card-is-blue">Learn more 
+                                                                
+                                                            </a>
+                                                        </div>
+                                                        <div class="card_back" onclick="ibmStats.event({'ibmEV' : 'internal event', 'ibmEvAction' : this.href, 'ibmEvLinkTitle' : 'card_5', 'ibmEvTarget' : 'card_click_back'}); return true;">
+                                                            <a href="#" rel="card_5" onclick="ibmStats.event({'ibmEV' : 'internal event', 'ibmEvAction' : this.href, 'ibmEvLinkTitle' : 'card_5', 'ibmEvTarget' : 'flip_card_btf'}); return true;" class="card_toggle back-button">&lt;</a>
+															
+                                                            <a href="http://twitter.com/intent/tweet?text=Why%20mobile%3F%20Reach%20new%20customers%20across%20multiple%20channels%20and%20devices+%23ibmmobilefirst%20http%3A%2F%2Fibm.com%2F11BQ3fJ%20via%20%40ibmmobile" title="Twitter" target="_blank" onclick="ibmStats.event({'ibmEV' : 'external link', 'ibmEvAction' : this.href, 'ibmEvLinkTitle' : 'Card 5', 'ibmEvTarget' : 'Twitter'}); return true;" class="twitter-link"></a>
+															
+                                                            <a href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fwww.ibm.com%2Fmobile-enterprise%2Fus%2Fen%2Findex.html&t=Mobile-enterprise" title="Facebook" target="_blank" rel="facebook" onclick="ibmStats.event({'ibmEV' : 'external link', 'ibmEvAction' : this.href, 'ibmEvLinkTitle' : 'Card 5', 'ibmEvTarget' : 'Facebook'}); return true;" class="fb-link"></a>
+															
+                                                            <p>
+                                                                By <b>writing code once for multiple mobile platforms</b> and connecting to multiple ERP systems, TBC Corp. has increased its reach: mobile visitors to the website have doubled.
+                                                            </p>
+                                                            <a href="http://www.youtube.com/watch?v=KSIQFSy_4uU" target="_blank" class="back-learn-more ibm-media">Watch video</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div id="card_6" class="card_container">
+                                                    <div class="card">
+                                                        <div class="card_front" onclick="ibmStats.event({'ibmEV' : 'internal event', 'ibmEvAction' : this.href, 'ibmEvLinkTitle' : 'card_6', 'ibmEvTarget' : 'card_click_front'}); return true;">
+                                                            <h4>Embrace BYOD</h4>
+                                                            <hr/>
+                                                            <p>
+                                                                With our BYOD policy, how can I <b>safeguard enterprise data</b>?
+                                                            </p>
+                                                            <a href="#" rel="card_6" onclick="ibmStats.event({'ibmEV' : 'internal event', 'ibmEvAction' : this.href, 'ibmEvLinkTitle' : 'card_6', 'ibmEvTarget' : 'flip_card_ftb'}); return true;" class="card_toggle card-is-green">Learn more 
+                                                                
+                                                            </a>
+                                                        </div>
+                                                        <div class="card_back" onclick="ibmStats.event({'ibmEV' : 'internal event', 'ibmEvAction' : this.href, 'ibmEvLinkTitle' : 'card_6', 'ibmEvTarget' : 'card_click_back'}); return true;">
+                                                            <a href="#" rel="card_6" onclick="ibmStats.event({'ibmEV' : 'internal event', 'ibmEvAction' : this.href, 'ibmEvLinkTitle' : 'card_6', 'ibmEvTarget' : 'flip_card_btf'}); return true;" class="card_toggle back-button">&lt;</a>
+															
+                                                            <a href="http://twitter.com/intent/tweet?text=Why%20mobile%3F%20Safeguard%20enterprise%20data%20even%20with%20BYOD+%23ibmmobilefirst%20http%3A%2F%2Fbit.ly%2F156GxjE%20via%20%40ibmmobile" title="Twitter" target="_blank" onclick="ibmStats.event({'ibmEV' : 'external link', 'ibmEvAction' : this.href, 'ibmEvLinkTitle' : 'Card 6', 'ibmEvTarget' : 'Twitter'}); return true;" class="twitter-link"></a>
+															
+                                                            <a href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fwww.ibm.com%2Fmobile-enterprise%2Fus%2Fen%2Findex.html&t=Mobile-enterprise" title="Facebook" target="_blank" rel="facebook" onclick="ibmStats.event({'ibmEV' : 'external link', 'ibmEvAction' : this.href, 'ibmEvLinkTitle' : 'Card 6', 'ibmEvTarget' : 'Facebook'}); return true;" class="fb-link"></a>
+															
+                                                            <p>
+                                                                IBM installs <b>agent software on every connected device</b> and monitors with endpoint management tools to help protect the enterprise data that's acessible over a wide variety of mobile operating systems.
+                                                            </p>
+                                                            <a href="ftp://ftp.networking.ibm.com/common/ssi/ecm/en/enc03011usen/ENC03011USEN.PDF" target="_blank" class="back-learn-more">Read case study</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div id="card_1" class="card_container">
+                                                    <div class="card">
+                                                        <div class="card_front" onclick="ibmStats.event({'ibmEV' : 'internal event', 'ibmEvAction' : this.href, 'ibmEvLinkTitle' : 'card_1', 'ibmEvTarget' : 'card_click_front'}); return true;">
+                                                            <h4>Integrate for efficiency</h4>
+                                                            <hr/>
+                                                            <p>
+                                                                How can I <b>increase productivity</b>
+                                                                using mobile connections?
+                                                            </p>
+                                                            <a href="#" rel="card_1" onclick="ibmStats.event({'ibmEV' : 'internal event', 'ibmEvAction' : this.href, 'ibmEvLinkTitle' : 'card_1', 'ibmEvTarget' : 'flip_card_ftb'}); return true;" class="card_toggle card-is-orange">Learn more 
+                                                                
+                                                            </a>
+                                                        </div>
+                                                        <div class="card_back" onclick="ibmStats.event({'ibmEV' : 'internal event', 'ibmEvAction' : this.href, 'ibmEvLinkTitle' : 'card_1', 'ibmEvTarget' : 'card_click_back'}); return true;">
+                                                            <a href="#" rel="card_1" onclick="ibmStats.event({'ibmEV' : 'internal event', 'ibmEvAction' : this.href, 'ibmEvLinkTitle' : 'card_1', 'ibmEvTarget' : 'flip_card_btf'}); return true;" class="card_toggle back-button">&lt;</a>
+                                                            <a href="http://twitter.com/intent/tweet?text=Why%20mobile%3F%20Increase%20productivity%20using%20mobile%20connections+%23ibmmobilefirst%20http%3A%2F%2Fibm.com%2FY6VdKm%20via%20%40ibmmobile" title="Twitter" target="_blank" onclick="ibmStats.event({'ibmEV' : 'external link', 'ibmEvAction' : this.href, 'ibmEvLinkTitle' : 'Card 1', 'ibmEvTarget' : 'Twitter'}); return true;" class="twitter-link"></a>
+                                                            <a href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fwww.ibm.com%2Fmobile-enterprise%2Fus%2Fen%2Findex.html&t=Mobile-enterprise" title="Facebook" target="_blank" rel="facebook" onclick="ibmStats.event({'ibmEV' : 'external link', 'ibmEvAction' : this.href, 'ibmEvLinkTitle' : 'Card 1', 'ibmEvTarget' : 'Facebook'}); return true;" class="fb-link"></a>
+                                                            <p>
+                                                                To help agents, American National Insurance <b>integrated mobile apps with its database and information sources</b>. Before the in-house training, 100 agents had accessed the new mobile site.
+                                                            </p>
+                                                            <a href="http://public.dhe.ibm.com/common/ssi/ecm/en/wsc14423usen/WSC14423USEN.PDF" target="_blank" class="back-learn-more">Read case study</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="ibm-col-1-1">
+                                    	<br/>                                       
+                                        <!-- =========== Announcement boxes here ================== -->
+                                    	<ul class="announce-list">
+                                        	<li class="ann-li-left">
+                                            	<div class="announce-off">
+	                                                <span class="ann-top">IBM perspective</span>
+	                                            	<h4 class="ann-head">The mobile world is open for business</h4>
+													<p class="ann-body">
+														Learn how mobile is enabling companies to transform their customer interactions and capture more business.</p> 
+													<a href="/mobile-enterprise/us/en/bin/pdf/IBMmobileopad.pdf" class="ann-cta" target="_blank">Read IBM point of view</a>
+												</div>
+                                            </li>
+                                            
+                                            <li>
+                                            	<div class="announce-over">
+                                            		
+                                            		<span class="ann-top">Announcing</span>
+                                            		<h4 class="ann-head">IBM <span>MobileFirst</span></h4>
+													<p class="ann-body">Our comprehensive portfolio of mobile solutions can help your business turn each interaction into an opportunity. Read about our newest software and services.</p>
+													<a href="/mobile-enterprise/us/en/why-ibm-for-mobile/" class="card-is-orange">Learn more</a>
+												</div>
+                                            </li>
+                                            
+                                            <li class="ann-li-right">
+                                            	<span class="ann-date">Feb 28 12-12:30p</span>
+                                            	<div class="announce-off">
+	                                                <span class="ann-top">Live from</span>
+	                                            	<h4 class="ann-head">Mobile World Congress</h4>
+													<p class="ann-body">See the newest mobile technologies available today. Gain insights from  business leaders who are building mobile enterprises.</p>
+													<a href="http://www.ibm.com/software/solutions/mobile-enterprise/events/" class="ann-cta">Register</a>						
+                                            	</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="ibm-col-1-1">
+										<div style="height: 1px; border-top: 1px solid #ccc; margin-top: 50px;" /></div>
+                                		<h2 id="second-headline">Move your business ahead by becoming a mobile enterprise</h2>
+
+                                        <div class="ibm-columns">
+                                            <div class="ibm-col-6-3">
+												<p class="front-secondary-p">Innovative businesses are becoming mobile enterprises. <br />They connect with mobile customers, build insights through more powerful analytics, deliver more convenient and relevant engagements, and improve management and customer service with seamless integration of front-end functionality and back-end data.<br/>
+                                                <a href="http://www.youtube.com/watch?v=eJKRMNZtct4" class="ibm-media ibm-video-link front-secondary-link">IBM Mobile Business. In motion.</a>
+                                                </p>
+                                                <p class="front-secondary-connector">Learn more</p>
+                                                <ul class="front-secondary-list-links">
+                                                	<li><a href="/mobile-enterprise/us/en/why-ibm-for-mobile/?lnk=learnmore">See why you should select from the IBM MobileFirst portfolio of offerings &rsaquo;</a> </li>
+                                                    <li><a href="/mobile-enterprise/us/en/why-mobile/mobile-apps.html">See the wide range of IBM mobile apps to support your mobile enterprise &rsaquo;</a> </li>
+                                                </ul>
+											</div>
+											<div class="ibm-col-6-3">
+												<h3 class="secondary-header">Becoming a mobile enterprise enables you to:</h3> 
+
+												<ul class="front-secondary-list-copy">
+                                                	<li><b>Attract new customers</b>, transform your value chain, and increase productivity using the new business models and insights you can only get from mobile interactions.
+													</li>
+
+													<li><b>Delight users with contextually relevant experiences</b> by delivering engaging apps that are created with simplified multichannel development solutions.
+													</li>
+
+													<li><b>Turn every interaction into an opportunity</b> for return on engagement and investment, by re-imagining every interaction with mobile as your most immediate touchpoint.
+													</li>
+
+													<li><b>Provide a consistent brand experience</b> across all touchpoints by connecting mobile apps to systems of record for continuous, trusted transactions.
+													</li>
+													
+													<li><b>Deliver mobile first innovation</b> by leveraging cloud technologies to meet increased IT demands, lower costs, and gain visibility and control.</li>
+													<a href="/mobile-enterprise/us/en/why-ibm-for-mobile/" class="ibm-generic-link">Learn how IBM MobileFirst can help you become a mobile enterprise</a>
+												</ul>
+                                                
+											</div>
+                                        </div>
+                                    </div>
+								</div>
+								<!-- :.: Contact Module :.: -->
+								<div class="ibm-columns">
+									<div class="ibm-col-1-1 ibm-slider-section">
+										<div class="ibm-columns">
+											<div class="ibm-col-6-2">
+												<span id="seeit-conn">Connect with IBM MobileFirst</span>
+												<ul class="ibm-connect-bar">
+													<li>
+														<a target="_blank" href="https://twitter.com/ibmmobilefirst" class="ibm-connect-bar-twitter" title="IBM MobileFirst on Twitter">Twitter</a>
+														<em>on Twitter</em>
+													</li>
+													<li>
+														<a target="_blank" href="http://www.linkedin.com/groups/IBM-Mobile-First-4837988/about" class="ibm-connect-bar-linkedin" title="IBM MobileFirst on LinkedIn">LinkedIn</a>
+														<em>on LinkedIn</em>
+													</li>
+													<li>
+														<a target="_blank" href="https://www.facebook.com/IbmMobileFirst" class="ibm-connect-bar-facebook" title="IBM MobileFirst on Facebook">Facebook</a>
+														<em>on Facebook</em>
+													</li>
+													<li>
+														<a target="_blank" href="http://asmarterplanet.com/mobile-enterprise" class="ibm-connect-bar-blog" title="IBM MobileFirst Blog">WordPress</a>
+														<em>on IBM MobileFirst Blog</em>
+													</li>
+													<li>
+														<a target="_blank" href="http://www.youtube.com/user/ibmmobileenterprise" class="ibm-connect-bar-youtube" title="IBM MobileFirst on YouTube">YouTube</a>
+														<em>on YouTube</em>
+													</li>
+												</ul>
+											</div> <!-- 6-2 ends -->
+											<div class="ibm-col-6-4">
+												<ul class="ibm-live-assistance-list">
+													<li class="ibm-phone-link">
+														Call us at: <span class="ibm-contact-bold"><strong>1-877-426-3774</strong></span>
+														&nbsp;Priority code: <span>109HE03W</span>
+													</li>
+													<li class="ibm-access" id="lpbutton">
+														<!--LP dyn button-->
+													</li>
+												</ul>
+												<span id="seeit-conn">Join the IBM MobileFirst conversation</span>
+												<ul class="ibm-link-list">
+													<li><a target="_blank" href="https://twitter.com/ibmmobilefirst" class="ibm-twitter-link">#ibmmobilefirst</a></li>
+												</ul>
+											</div> <!-- 6-4 ends -->
+										</div>
+									</div>
+								</div> <!-- .:Contact Module ends:. -->
+							</div>
+                            <!-- FEATURES_BEGIN -->
+                            <div id="ibm-content-sidebar">
+                                <div id="ibm-contact-module">
+                                    <!--IBM Contact Module-->
+                                </div>
+                                %%sidebarspace%%
+                            </div>
+                            <!-- FEATURES_END -->
+                        </div>
+                        <!-- CONTENT_BODY_END -->
+                    </div>
+                    <!-- CONTENT_END --><!-- NAVIGATION_BEGIN -->
+                    <div id="ibm-navigation">
+                    </div>
+                    <!-- NAVIGATION_END -->
+                </div>
+            </div>
+            <!-- FOOTER_BEGIN -->
+            <div id="ibm-footer-module">
+            </div>
+            <div id="ibm-footer">
+                <h2 class="ibm-access">Footer links</h2>
+                <ul>
+                    <li>
+                        <a href="http://www.ibm.com/contact/us/en/">Contact</a>
+                    </li>
+                    <li>
+                        <a href="http://www.ibm.com/privacy/us/en/">Privacy</a>
+                    </li>
+                    <li>
+                        <a href="http://www.ibm.com/legal/us/en/">Terms of use</a>
+                    </li>
+                    <li>
+                        <a href="http://www.ibm.com/accessibility/us/en/">Accessibility</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- FOOTER_END -->
+        </div>
+        <div id="ibm-metrics">
+            <script src="//www.ibm.com/common/stats/stats.js" type="text/javascript">
+                //
+            </script>
+        </div>
+        <script type="text/javascript">
+            lis = document.getElementsByTagName("div")
+            
+            for (x = 0; x < lis.length; x++) {
+                if (lis[x].className == "press") {
+                    lis[x].style.display = show(lis[x].title)
+                }
+            }
+            
+            function show(expdate){
+                var today = new Date();
+                var expireDate = new Date(expdate); // We can set an arbitrary date if need be
+                return today <= expireDate ? "block" : "none";
+            }
+        </script>
+    </body>
+</html>
